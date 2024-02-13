@@ -26,7 +26,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setButtonText("Sending...");
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -38,9 +38,12 @@ const Contact = () => {
       )
       .then(
         () => {
+          setFormDetails(formInitialDetails);
+          setButtonText("Send");
           console.log("SUCCESS!");
         },
         (error) => {
+          setButtonText("Send");
           console.log("FAILED...", error.text);
         }
       );
