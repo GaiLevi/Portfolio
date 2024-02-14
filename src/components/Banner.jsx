@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Nav } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
@@ -65,7 +65,9 @@ const Banner = () => {
                 >
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>
-                    {`Hi! I'm Gai Levi`}{" "}
+                    {`Hi! I'm Gai Levi`}
+                    {"  "}
+                    <br />
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
@@ -75,15 +77,19 @@ const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    as passionate full-stack developer with a BSc in Computer
+                    Science. Specializing in TypeScript, JavaScript, React,
+                    Node.js, and Express, I excel in crafting dynamic web
+                    applications. With a quick learner mindset and agile
+                    approach, I'm dedicated to delivering clean, efficient code
+                    and seamless user experiences. Let's build something amazing
+                    together!
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
-                  </button>
+                  <Nav.Link href="#connect">
+                    <button>
+                      Let’s Connect <ArrowRightCircle size={25} />
+                    </button>
+                  </Nav.Link>
                 </div>
               )}
             </TrackVisibility>
