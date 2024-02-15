@@ -61,11 +61,9 @@ const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Explore a selection of my diverse projects, ranging from
+                    full-stack applications to projects developed during my
+                    academic journey.
                   </p>
                 </div>
               )}
@@ -83,12 +81,17 @@ const Projects = () => {
                 <Nav.Item>
                   <Nav.Link eventKey="second">Tab 2</Nav.Link>
                 </Nav.Item>
-                <Nav.Item>
+                {/* <Nav.Item>
                   <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                </Nav.Item>
+                </Nav.Item> */}
               </Nav>
               <Tab.Content id="slideInUp">
                 <Tab.Pane eventKey="first">
+                  <p>
+                    These projects demonstrate my proficiency in ReactJS,
+                    NodeJS, and Express frameworks, showcasing my ability to
+                    build dynamic and engaging web applications.
+                  </p>
                   <Row className="same-height-images">
                     {projects.map((project, index) => {
                       return (
@@ -105,12 +108,7 @@ const Projects = () => {
                   </Row>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Cumque quam, quod neque provident velit, rem explicabo
-                    excepturi id illo molestiae blanditiis, eligendi dicta
-                    officiis asperiores delectus quasi inventore debitis quo.
-                  </p>
+                  <p>Projects I developed during my academic courses.</p>
                   <Row className="same-height-images">
                     {projectsBsc.map((project, index) => {
                       return (

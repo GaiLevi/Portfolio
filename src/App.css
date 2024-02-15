@@ -85,12 +85,26 @@ select:focus {
   }
 }
 
-p.success {
-  color: green;
+.button-status-response {
+  display: flex;
+  align-items: center;
 }
 
-p.danger {
+p.success {
+  padding: 7px;
+  margin-top: 25px;
+  margin-inline: 20px;
+  background-color: rgb(3, 170, 3);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+p.error {
+  padding: 1px;
+
   color: red;
+  font-weight: bold;
 }
 /************ Navbar Css ************/
 nav.navbar {
@@ -387,7 +401,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
 }
 .project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+  /* width: 33.33333%; */
+  width: 50%;
 }
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
@@ -425,8 +440,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 55px 0px 0px 55px;
 }
 .nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
 }
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -580,7 +597,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
+  padding-block: 25px;
+  /* padding: 0 0 50px 0; */
   background-image: url("./assets/img/footer-bg.png");
   background-position: center center;
   background-size: cover;
@@ -655,4 +673,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #b8b8b8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .footer-logo-col {
+    display: flex;
+    justify-content: center;
+  }
+  .footer img {
+    width: 40%;
+  }
 }
