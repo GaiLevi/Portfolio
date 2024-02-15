@@ -290,6 +290,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
 }
+@media only screen and (max-width: 767px) {
+  .banner h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+  }
+}
 .banner p {
   color: #b8b8b8;
   font-size: 18px;
@@ -317,6 +327,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
+}
+@media only screen and (max-width: 767px) {
+  .banner img {
+    margin-top: 20px;
+    animation: updown 3s linear infinite;
+  }
 }
 @keyframes updown {
   0% {

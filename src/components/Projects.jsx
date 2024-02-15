@@ -52,7 +52,7 @@ const Projects = () => {
       <Container>
         <Row>
           <Col size={12}>
-            <TrackVisibility>
+            <TrackVisibility once>
               {({ isVisible }) => (
                 <div
                   className={
